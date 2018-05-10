@@ -5,15 +5,15 @@
 
 <topic id="Sample Page">
 <!--<xsl:for-each select="./body/chl/*">-->
-         <title><xsl:value-of select="./book"/></title>
+         <title><xsl:value-of select="."/></title>
 <!--</xsl:for-each> -->         
     
 </topic>
 
 </xsl:template>
 
-<xsl:template match="chl">
+<!--<xsl:template match="chl">
     <li>Name - <xsl:value-of select="."/> </li>
-</xsl:template>
+</xsl:template>-->
 
 </xsl:stylesheet>

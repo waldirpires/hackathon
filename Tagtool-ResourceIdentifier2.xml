@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<doc version="XSEIF R6"
+xmlns="urn:x-ericsson:r2:reg-doc:1551-fad.110.05:en:*">
+<body>
+<chl><title xml:id="id_pn6k">Resource Identifier</title>
+<p>The resource identifier is expressed by a URI with the following
+format:</p>
+<p><resource-id>&lt;scheme>://&lt;host>[:&lt;port>]/&lt;applicationComponent>/&lt;apiName>/&lt;apiVersion>/&lt;resource>/&lt;id></resource-id
+></p>
+</chl>
+</body>
+</doc>
+<?Pub *0000003330 0?>
