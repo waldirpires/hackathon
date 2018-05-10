@@ -10,6 +10,7 @@ print 'Transforming ' + sys.argv[1] + ' ...'
 dom = ET.parse(sys.argv[1])
 xslt = ET.parse(sys.argv[2])
 transform = ET.XSLT(xslt)
+
 newdom = transform(dom)
 
 str = ET.tostring(newdom, pretty_print=True)

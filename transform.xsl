@@ -4,8 +4,16 @@
 <xsl:template match="/">
 
 <topic id="Sample Page">
-    <title><xsl:value-of select="/body/chl/title"/></title>
+<!--<xsl:for-each select="./body/chl/*">-->
+         <title><xsl:value-of select="./book"/></title>
+<!--</xsl:for-each> -->         
+    
 </topic>
 
 </xsl:template>
+
+<xsl:template match="chl">
+    <li>Name - <xsl:value-of select="."/> </li>
+</xsl:template>
+
 </xsl:stylesheet>
