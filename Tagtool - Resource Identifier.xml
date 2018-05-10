@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE doc PUBLIC "-//ERICSSON//DTD XSEIF 1/FAD 110 05 R6//EN"
+ "XSEIF_R6.dtd">
+<doc version="XSEIF R6"
+xmlns="urn:x-ericsson:r2:reg-doc:1551-fad.110.05:en:*">
+<meta-data>
+<confidentiality class="ericsson-internal"/>
+<doc-name></doc-name>
+<doc-id>
+<doc-no type="registration"></doc-no><language code="en"/><rev>PA1</rev>
+<date><y>2018</y><m>05</m><d>10</d></date>
+</doc-id>
+<company-id>
+<business-unit></business-unit>
+<company-name></company-name>
+<company-symbol logotype="ericsson"></company-symbol>
+</company-id>
+<part-of>Hackathon</part-of>
+<title>Tagtool</title>
+<subtitle>Sample page</subtitle>
+<drafted-by>
+<person>
+<name></name><signature></signature>
+</person>
+</drafted-by>
+<approved-by approved="no">
+<person>
+<name></name><signature></signature>
+</person>
+</approved-by>
+<revision-history suppress="yes">
+<rev-info>
+<rev>PA1</rev>
+<date><y>2018</y><m>05</m><d>10</d></date>
+<signature></signature>
+<description><dp></dp>
+</description>
+</rev-info>
+</revision-history>
+</meta-data>
+<front></front>
+<body>
+<chl><title xml:id="id_pn6k">Resource Identifier</title>
+<p>The resource identifier is expressed by a URI with the following
+format:</p>
+<p><resource-id>&lt;scheme>://&lt;host>[:&lt;port>]/&lt;applicationComponent>/&lt;apiName>/&lt;apiVersion>/&lt;resource>/&lt;id></resource-id
+></p>
+<table orient="port">
+<caption xml:id="Table">URI Parameters for the Resource Identifier</caption>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<thead>
+<row>
+<entry valign="top"><tp>Parameter</tp>
+</entry>
+<entry valign="top"><tp>Description</tp>
+</entry>
+</row>
+</thead>
+<tbody><row>
+<entry><tp>scheme</tp>
+</entry>
+<entry><tp>The Application protocol, for example HTTP.</tp>
+</entry>
+</row>
+<row>
+<entry><tp>host</tp>
+</entry>
+<entry><tp>The network address to access the interface and its connected
+service.</tp>
+</entry>
+</row>
+<row>
+<entry><tp>port</tp>
+</entry>
+<entry><tp>The TCP/IP port used for access. If not specified, default
+ports for the applications are assumed.</tp>
+</entry>
+</row>
+<row>
+<entry><tp>applicationComponent</tp>
+</entry>
+<entry><tp>The name of the application component providing the resource.</tp>
+</entry>
+</row>
+<row>
+<entry><tp>apiName</tp>
+</entry>
+<entry><tp>The name of the interface.</tp>
+</entry>
+</row>
+<row>
+<entry><tp>apiVersion</tp>
+</entry>
+<entry><tp>The version mechanism is not used. The value is always <resource-id
+>v1</resource-id></tp>
+</entry>
+</row>
+<row>
+<entry><tp>resource</tp>
+</entry>
+<entry><tp>The resource name.</tp>
+</entry>
+</row>
+<row>
+<entry><tp>id</tp>
+</entry>
+<entry><tp>The resource unique identifier.</tp>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<example>
+<preform boxed="no">https://10.10.5.1/cpi/discovery/v1/bi/1</preform>
+</example>
+<p>Besides the Resource Identifier, CPI also supports:</p>
+<list>
+<list-item><p>Field Restrictions</p>
+</list-item>
+<list-item><p>HTTP Headers</p>
+</list-item>
+<list-item><p>Resource Representation</p>
+</list-item>
+<list-item><p>Query Patterns</p>
+</list-item>
+<list-item><p>Task Patterns</p>
+</list-item>
+</list>
+<note><p>For more information about the Services supported by each
+Interface, refer to <link linkend="Table">Resources</link><?Pub Caret?>.</p>
+</note>
+</chl>
+</body>
+</doc>
+<?Pub *0000003330 0?>
