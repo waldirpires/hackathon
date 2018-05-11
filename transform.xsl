@@ -3,6 +3,7 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:template match="/">
 
+<<<<<<< HEAD
         <topic id="Sample Page">
             <xsl:for-each select="doc/body/chl">
                 <title><xsl:value-of select="title"/></title>
@@ -44,11 +45,23 @@
                 </body>              
                     
     <note type="tip"><xsl:value-of select="/doc/body/chl/note">
+=======
+<topic id="Sample Page">
+<!--<xsl:for-each select="./body/chl/*">-->
+         <title><xsl:value-of select="."/></title>
+<!--</xsl:for-each> -->         
+>>>>>>> 2a5da821acf1080a641bf01b89e8c3fd304990a8
     
     </xsl:value-of></note>
         </topic>
 
     </xsl:template>
 
+<<<<<<< HEAD
+=======
+<!--<xsl:template match="chl">
+    <li>Name - <xsl:value-of select="."/> </li>
+</xsl:template>-->
+>>>>>>> 2a5da821acf1080a641bf01b89e8c3fd304990a8
 
 </xsl:stylesheet>

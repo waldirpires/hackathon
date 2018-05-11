@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Arbortext, Inc., 1988-2008, v.4002-->
+<<<<<<< HEAD
 <doc>
+=======
+<doc version="XSEIF R6"
+xmlns="urn:x-ericsson:r2:reg-doc:1551-fad.110.05:en:*">
+>>>>>>> 2a5da821acf1080a641bf01b89e8c3fd304990a8
 <body>
 <chl><title xml:id="id_pn6k">Resource Identifier</title>
 <p>The resource identifier is expressed by a URI with the following
 format:</p>
 <p><resource-id>&lt;scheme>://&lt;host>[:&lt;port>]/&lt;applicationComponent>/&lt;apiName>/&lt;apiVersion>/&lt;resource>/&lt;id></resource-id
 ></p>
+<<<<<<< HEAD
 <table> <!--orient="port"-->
 <caption xml:id="Table">URI Parameters for the Resource Identifier</caption>
 <tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
@@ -91,6 +97,8 @@ ports for the applications are assumed.</tp>
 <note><p>For more information about the Services supported by each
 Interface, refer to <link linkend="Table">Resources</link><?Pub Caret?>.</p>
 </note>
+=======
+>>>>>>> 2a5da821acf1080a641bf01b89e8c3fd304990a8
 </chl>
 </body>
 </doc>
