@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE doc PUBLIC "-//ERICSSON//DTD XSEIF 1/FAD 110 05 R6//EN"
+ "XSEIF_R6.dtd">
+<?Pub Inc?>
+<doc version="XSEIF R6"
+xmlns="urn:x-ericsson:r2:reg-doc:1551-fad.110.05:en:*">
+<meta-data><?Pub Dtl?>
+<confidentiality class="ericsson-internal"/>
+<doc-name></doc-name>
+<doc-id>
+<doc-no type="registration"></doc-no><language code="en"/><rev>PA1</rev>
+<date><y>2018</y><m>05</m><d>10</d></date>
+</doc-id>
+<company-id>
+<business-unit></business-unit>
+<company-name></company-name>
+<company-symbol logotype="ericsson"></company-symbol>
+</company-id>
+<part-of>Hackathon</part-of>
+<title>Tagtool</title>
+<subtitle>Sample page</subtitle>
+<drafted-by>
+<person>
+<name></name><signature></signature>
+</person>
+</drafted-by>
+<approved-by approved="no">
+<person>
+<name></name><signature></signature>
+</person>
+</approved-by>
+<revision-history suppress="yes">
+<rev-info>
+<rev>PA1</rev>
+<date><y>2018</y><m>05</m><d>10</d></date>
+<signature></signature>
+<description><dp></dp>
+</description>
+</rev-info>
+</revision-history>
+</meta-data>
+<front></front>
+<body>
+<chl><title xml:id="id_pn6k">HTTP Header</title>
+<stitle xml:id="id_piq0">HTTP Headers</stitle>
+<p>The following standard and custom HTTP headers are supported:</p>
+<titled-block><?Pub Caret?>
+<title>Request</title>
+<table>
+<caption>Request HTTP Headers</caption>
+<tgroup cols="3"><colspec colname="col1"/><colspec colname="col2"/>
+<colspec colname="col3"/>
+<tbody><row>
+<entry><tp>Header Field Name</tp>
+</entry>
+<entry><tp>Header Field Value</tp>
+</entry>
+<entry><tp>Mandatory/Optional </tp>
+</entry>
+</row>
+<row>
+<entry><tp>Accept-Language</tp>
+</entry>
+<entry><tp>As per RFC2616</tp>
+</entry>
+<entry><tp>Optional</tp>
+</entry>
+</row>
+<row>
+<entry morerows="1" rowsep="1"><tp>Content-Type</tp>
+</entry>
+<entry><tp>application/json</tp>
+</entry>
+<entry><tp>Mandatory</tp>
+</entry>
+</row>
+<row>
+<entry><tp>charset=utf8</tp>
+</entry>
+<entry><tp>Optional</tp>
+</entry>
+</row>
+<row>
+<entry><tp>ERICSSON.Generic-Interface-Parameters</tp>
+</entry>
+<entry><tp>This field is composed of OPS, PPS, EPS, and TPS parameters
+compressed with gzip and BASE64 encoded. For more information, refer
+to <ulink xlink:type="simple"
+xlink:href="http://cpipub.epk.ericsson.se/st4/RevenueManagerCPI-r2306/current/Documentation/start.html?file=7955709451.html"
+xlink:title="http://cpipub.epk.ericsson.se/st4/RevenueManagerCPI-r2306/current/Documentation/start.html?file=7955709451.html"
+xmlns:xlink="http://www.w3.org/1999/xlink">Transaction Traceability
+Service</ulink>. <tnote> Example, H4sIAAAAAAAA/7WQX0vDMBTFv4rkuSlJ+j9vcxYdDlpo8UGRkbV3M7CmI4lTGf3ups754BSG4Fu459yb8zt7BK8WtBKbUmjRgXtXYBG/2COrhTKisbJXs9ZNUBy2KU1ihpcBS3G4WsY4XcUr3BCWtctIEEIo8pCVHVRWdNtxhxGaYBJhltU05YTwMPMzQu6dTypjhWrgcDyv8tvJ3dXkpmQkCRd5WTnLswF9kJuX6s1Y6NxQgzC9+tj5jH6Q/MYpFgrdgkaDh3ot11IJK9X6P9i+0AJaU8KjmEfUD85AK85Bm5azRaGbJzAu6hjzO91WGHNK9rD/qf4Y06BmlIeE08QPWHKasc6rGg2P3thM80tjR+8ZXTHk/b3j8adpvwMt1jDuXc+Ly8n8qJS9VHYOO9iMGkHD8A7smnIzxAIAAA==</tnote
+></tp>
+<tp>For GIP Request parameters, refer to <xref linkend="GIP-Request"
+/>.</tp>
+</entry>
+<entry><tp>Optional</tp>
+<tp>This header is controlled by Function Control. When Function Control
+is deactivated, this header is ignored. For more information, refer
+to <ulink xlink:type="simple"
+xlink:href="http://cpipub.epk.ericsson.se/st4/rm_offering-r2607/current/Documentation/start.html?file=10848393867.html"
+xlink:title="http://cpipub.epk.ericsson.se/st4/rm_offering-r2607/current/Documentation/start.html?file=10848393867.html"
+xmlns:xlink="http://www.w3.org/1999/xlink">Function Control</ulink
+>.</tp>
+</entry>
+</row>
+<row>
+<entry><tp>Authorization</tp>
+</entry>
+<entry><tp>Bearer &lt;token></tp>
+</entry>
+<entry><tp>Optional by default</tp>
+<tp>If Authentication and Authorization are active, then this parameter
+is mandatory.</tp>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</titled-block>
+<titled-block>
+<title>Response</title>
+<table orient="port">
+<caption>Response HTTP Headers</caption>
+<tgroup cols="3"><colspec colname="col1"/><colspec colname="col2"/>
+<colspec colname="col3"/>
+<thead>
+<row>
+<entry valign="top"><tp>Header Field Name</tp>
+</entry>
+<entry valign="top"><tp>Header Field Value</tp>
+</entry>
+<entry valign="top"><tp>Mandatory/Optional </tp>
+</entry>
+</row>
+</thead>
+<tbody><row>
+<entry morerows="2"><tp>Content-Type</tp>
+</entry>
+<entry><tp>application/json</tp>
+</entry>
+<entry><tp>Mandatory</tp>
+</entry>
+</row>
+<row>
+<entry><tp>charset=utf8</tp>
+</entry>
+<entry><tp>Optional</tp>
+</entry>
+</row>
+<row>
+<entry><tp>profile="http://ericsson.com/&lt;resource>.json#"</tp>
+</entry>
+<entry><tp>Optional</tp>
+</entry>
+</row>
+<row>
+<entry><tp>Content-Length</tp>
+</entry>
+<entry><tp>&lt;n></tp>
+</entry>
+<entry><tp>Mandatory</tp>
+</entry>
+</row>
+<row>
+<entry><tp>ERICSSON.Generic-Interface-Parameters</tp>
+</entry>
+<entry><tp>This field is composed of PPS parameters compressed with
+gzip and BASE64 encoded. For more information, refer to <ulink
+xlink:type="simple"
+xlink:href="http://cpipub.epk.ericsson.se/st4/RevenueManagerCPI-r2306/current/Documentation/start.html?file=7955709451.html"
+xlink:title="http://cpipub.epk.ericsson.se/st4/RevenueManagerCPI-r2306/current/Documentation/start.html?file=7955709451.html"
+xmlns:xlink="http://www.w3.org/1999/xlink">Transaction Traceability
+Service</ulink>.<tnote> Example, H4sIAAAAAAAAAKtWKkgsLs7MSw9ILErMTS1JLQpOLVGyiq5WKsnMTQ0uScwtULJSMjIwNNc1sNA1sgwxNLUyNrAyNNYzNTTWNTC2MjBQ0lHKzCsuScxLTvVMASoO84339AsOcfRzdlWqja0FAE6oDRZiAAAA</tnote
+></tp>
+<tp>For GIP Response parameters, refer to <xref linkend="GIP-Response"
+/>.</tp>
+</entry>
+<entry><tp>Optional</tp>
+<tp>This header is controlled by Function Control. When Function Control
+is deactivated, this header is ignored. For more information, refer
+to <ulink xlink:type="simple"
+xlink:href="http://cpipub.epk.ericsson.se/st4/rm_offering-r2607/current/Documentation/start.html?file=10848393867.html"
+xlink:title="http://cpipub.epk.ericsson.se/st4/rm_offering-r2607/current/Documentation/start.html?file=10848393867.html"
+xmlns:xlink="http://www.w3.org/1999/xlink">Function Control</ulink
+>.</tp>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</titled-block>
+</chl>
+</body>
+</doc>
+<?Pub *0000006244 0?>

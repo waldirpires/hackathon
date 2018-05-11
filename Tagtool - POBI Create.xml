@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE doc PUBLIC "-//ERICSSON//DTD XSEIF 1/FAD 110 05 R6//EN"
+ "XSEIF_R6.dtd">
+<?Pub Inc?>
+<doc version="XSEIF R6"
+xmlns="urn:x-ericsson:r2:reg-doc:1551-fad.110.05:en:*">
+<meta-data><?Pub Dtl?>
+<confidentiality class="ericsson-internal"/>
+<doc-name></doc-name>
+<doc-id>
+<doc-no type="registration"></doc-no><language code="en"/><rev>PA1</rev>
+<date><y>2018</y><m>05</m><d>10</d></date>
+</doc-id>
+<company-id>
+<business-unit></business-unit>
+<company-name></company-name>
+<company-symbol logotype="ericsson"></company-symbol>
+</company-id>
+<part-of>Hackathon</part-of>
+<title>Tagtool</title>
+<subtitle>Sample page</subtitle>
+<drafted-by>
+<person>
+<name></name><signature></signature>
+</person>
+</drafted-by>
+<approved-by approved="no">
+<person>
+<name></name><signature></signature>
+</person>
+</approved-by>
+<revision-history suppress="yes">
+<rev-info>
+<rev>PA1</rev>
+<date><y>2018</y><m>05</m><d>10</d></date>
+<signature></signature>
+<description><dp></dp>
+</description>
+</rev-info>
+</revision-history>
+</meta-data>
+<front></front>
+<body>
+<chl><title xml:id="id_pn6k">Present Offer Business Interaction</title>
+<chl><title xml:id="id_9h2w">CRUD Operations</title>
+<chl><title xml:id="id_338m">Create</title>
+<chl><title xml:id="id_6mal">Operations</title>
+<p>The following HTTP methods and URIs are applicable to perform the
+operation:</p>
+<table>
+<caption>Create Service Operation</caption>
+<tgroup cols="3"><colspec colname="col1" colwidth="0.82*"/><colspec
+colname="col2" colwidth="0.55*"/><colspec colname="col3" colwidth="1.63*"/>
+<thead>
+<row>
+<entry valign="top"><tp>Description</tp>
+</entry>
+<entry valign="top"><tp>Method</tp>
+</entry>
+<entry valign="top"><tp>URI</tp>
+</entry>
+</row>
+</thead>
+<tbody><row>
+<entry><tp>This operation creates and updates the shopping cart.</tp>
+</entry>
+<entry><tp><resource-id>POST</resource-id></tp>
+</entry>
+<entry><tp><resource-id>&lt;scheme>://&lt;host>[:&lt;port>]/cpi/orchestration/v1/bi/&lt;presentOfferBiId></resource-id
+></tp>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<p>The following use cases are available when creating a Present Offer
+Business Interaction: </p>
+<list>
+<list-item><p><link linkend="createPOBI">Create Present Offer Business
+Interaction</link></p>
+</list-item>
+<list-item><p><link linkend="addFaF">Create Present Offer Business
+Interaction to Add Friends and Family (FaF) List</link></p>
+</list-item>
+<list-item><p><link
+linkend="CreatePOBItoCreateandValidatecartitemswithContextAttributes"
+>Create Present Offer Business Interaction to Create Cart and Validate
+Cart Items with Context Attributes</link></p>
+</list-item>
+<list-item><p><link linkend="CreatePOBIwithProviderPOandContract"
+>Create Present Offer Business Interaction with Provider PO for Existing
+Contract</link></p>
+</list-item>
+<list-item><p><link linkend="CreatePOBIwithConsumerPOandContract"
+>Create Present Offer Business Interaction with Consumer PO for Existing
+Contract</link></p>
+</list-item>
+<list-item><p><link linkend="createPOBIwithConsumerPO">Create Present
+Offer Business Interaction with Consumer PO</link></p>
+</list-item>
+</list>
+<p>The following use cases illustrate the addition of product offer
+items to the existing product portfolio of the customer&mdash;also
+known as the installed base. </p>
+<list>
+<list-item><p><link linkend="chBlock-AddDevice">Add a Device in a
+Contract</link></p>
+</list-item>
+<list-item><p><link linkend="addDeviceWithoutContract">Add a Device
+without a Contract</link></p>
+</list-item>
+<list-item><p><link linkend="addPlan">Add a Plan</link></p>
+</list-item>
+<list-item><p><link linkend="addAddon">Add an Add-on</link></p>
+</list-item>
+<list-item><p><link linkend="addBundle">Add a Bundle</link></p>
+</list-item>
+</list>
+<p>The following use cases illustrate the exchange of one product
+offer for another.</p>
+<list>
+<list-item><p><link linkend="exchangePOwithPO">Exchange a Source Product
+Offer with a Target Product Offer</link></p>
+</list-item>
+<list-item><p><link linkend="exchangePOwithAddon">Exchange a Product
+Offer with an Add-On Product Offer</link></p>
+</list-item>
+</list>
+<p>The following use cases illustrate the exchange of one resource
+for another.</p>
+<list>
+<list-item><p><link linkend="exchangeLogicalwithPlan">Exchange Logical
+Resource under a Plan</link></p>
+</list-item>
+<list-item><p><link linkend="exchangeLogicalStandAlone">Exchange Logical
+Resource as Standalone</link></p>
+</list-item>
+<list-item><p><link linkend="ExchangePhysicalStandAlone">Exchange
+Physical Resource as Standalone</link></p>
+</list-item>
+</list>
+</chl>
+<chl><title xml:id="id_wz6r">HTTP Headers</title>
+<p>Standard and custom HTTP headers are supported. For more information,
+refer to <xref linkend="ID9125308171-1"/>.</p>
+</chl>
+<chl><title xml:id="id_jlsc">Resource Representation</title>
+<p>A description of the elements and their structure is contained
+in the resource representation.</p>
+<titled-block>
+<title>Request Resource Representation</title>
+</titled-block>
+<p>The <resource-id>BusinessInteraction.json</resource-id> requires
+a <resource-id>CPI-PresentOfferBI-2.0.0.spec</resource-id> as input.</p>
+<titled-block>
+<title>Response Resource Representation</title>
+</titled-block>
+<p>The <resource-id>BusinessInteraction.json</resource-id> conforms
+to <resource-id>CPI-PresentOfferBI-2.0.0.spec</resource-id>.</p>
+<p>For details, refer to <xref linkend="abc"/>.</p>
+</chl>
+</chl>
+</chl><?Pub Caret1?>
+</chl>
+</body>
+</doc>
+<?Pub *0000005520 0?>

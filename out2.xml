@@ -1,0 +1,72 @@
+Transforming Tagtool-ResourceIdentifier2.xml ...
+<topic id="Sample Page">
+  <title>Resource Identifier</title>
+  <p>The resource identifier is expressed by a URI with the following
+format:</p>
+  <p>&lt;scheme&gt;://&lt;host&gt;[:&lt;port&gt;]/&lt;applicationComponent&gt;/&lt;apiName&gt;/&lt;apiVersion&gt;/&lt;resource&gt;/&lt;id&gt;</p>
+  <p>Besides the Resource Identifier, CPI also supports:</p>
+  <p>Field Restrictions</p>
+  <p>HTTP Headers</p>
+  <p>Resource Representation</p>
+  <p>Query Patterns</p>
+  <p>Task Patterns</p>
+  <p>For more information about the Services supported by each
+Interface, refer to Resources.</p>
+  <body>
+    <simpletable relcolwidth="1* 2*">
+      <sthead>
+        <stentry>Parameter</stentry>
+        <stentry>Description</stentry>
+      </sthead>
+      <strow>
+        <stentry>scheme</stentry>
+        <stentry>The Application protocol, for example HTTP.</stentry>
+      </strow>
+      <strow>
+        <stentry>host</stentry>
+        <stentry>The network address to access the interface and its connected
+service.</stentry>
+      </strow>
+      <strow>
+        <stentry>port</stentry>
+        <stentry>The TCP/IP port used for access. If not specified, default
+ports for the applications are assumed.</stentry>
+      </strow>
+      <strow>
+        <stentry>applicationComponent</stentry>
+        <stentry>The name of the application component providing the resource.</stentry>
+      </strow>
+      <strow>
+        <stentry>apiName</stentry>
+        <stentry>The name of the interface.</stentry>
+      </strow>
+      <strow>
+        <stentry>apiVersion</stentry>
+        <stentry>The version mechanism is not used. The value is always v1</stentry>
+      </strow>
+      <strow>
+        <stentry>resource</stentry>
+        <stentry>The resource name.</stentry>
+      </strow>
+      <strow>
+        <stentry>id</stentry>
+        <stentry>The resource unique identifier.</stentry>
+      </strow>
+    </simpletable>
+    <pre>https://10.10.5.1/cpi/discovery/v1/bi/1</pre>
+    <p/>
+    <ul>
+      <li>Field Restrictions</li>
+      <li>HTTP Headers</li>
+      <li>Resource Representation</li>
+      <li>Query Patterns</li>
+      <li>Task Patterns</li>
+    </ul>
+  </body>
+  <note type="tip">For more information about the Services supported by each
+Interface, refer to Resources.
+</note>
+</topic>
+
+
+Done!

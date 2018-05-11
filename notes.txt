@@ -21,3 +21,14 @@ table
 ..tbody
 ...row
 ....entry
+
+[@version and @xmlns]
+
+protobuf
+jsonforms
+presentation canva
+
+business value
+ROI
+as a product
+demo, poc presentation
